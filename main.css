@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.background {
+  background-color: purple;
+  color: white;
+}
+
+.header {
+  display: flex;
+}
+.header .header__logo {
+  background-color: purple;
+  color: white;
+  padding: 20px;
+}
+.header .header__nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: black;
+  width: 100vw;
+}
+.header .header__nav .header__link {
+  color: white;
+  padding: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    display: none;
+  }
+  .portal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr 2fr;
+    gap: 10px;
+    margin: 20px;
+  }
+  .portal .portal__imagebox {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .portal .portal__imagebox .portal__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-image: url(./images/purple-field.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .portal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr 2fr;
+    grid-gap: 5px;
+    margin: 20px 0 0 40px;
+    text-align: center;
+  }
+  .portal .portal__imagebox {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  .portal .portal__imagebox .portal__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-image: url(./images/purple-field.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .portal .portal__about {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .portal .portal__hobbies {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .portal .portal__contact {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .portal .portal__employment {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .portal .portal__education {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+}
+@media screen and (min-width: 801px) {
+  .portal {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr 2fr;
+    grid-gap: 5px;
+    margin: 20px 0 0 40px;
+    text-align: center;
+  }
+  .portal .portal__imagebox {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+  .portal .portal__imagebox .portal__image {
+    width: auto;
+    height: 100px;
+    background-image: url(./images/purple-field.png);
+    background-size: cover;
+    background-position: bottom;
+  }
+  .portal .portal__about {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  .portal .portal__hobbies {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .portal .portal__contact {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .portal .portal__employment {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+  .portal .portal__education {
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
+}/*# sourceMappingURL=main.css.map */
